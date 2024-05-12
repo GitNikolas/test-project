@@ -1,6 +1,6 @@
 import React from "react";
-import map from './map.svg'
-import $ from 'jquery'
+import $ from 'jquery';
+import './Map.css';
 
 export function Map() {
 
@@ -43,6 +43,7 @@ export function Map() {
     });    
 
     return (
+      <div className="map">
         <div className="rf-map margin-top-20">
         <div className="district">
           <b></b>
@@ -514,5 +515,6 @@ export function Map() {
         </svg>
         <div className="district-links"></div>
       </div>
+    </div>   
     )
 };    
